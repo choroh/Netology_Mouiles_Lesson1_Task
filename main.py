@@ -7,12 +7,12 @@ Import. Module. Package.
 
 from datetime import date
 import application.salary
-import application.people
+import application.db.people
 
 
 def main():
     application.salary.calculate_salary()
-    application.people.get_employees()
+    application.db.people.get_employees()
     print(date.today().strftime("%m.%d.%Y"))
 
 
